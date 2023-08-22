@@ -1,16 +1,43 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <!-- Navigation Bar with ARIA role="navigation" -->
+    <nav role="navigation">
+        <ul role="list">
+            <li><a href="#about" role="listitem">About Me</a></li>
+            <li><a href="#projects" role="listitem">Projects</a></li>
+            <li><a href="#contact" role="listitem">Contact</a></li>
+        </ul>
+    </nav>
 
+    <!-- Heading with ARIA role="heading" -->
+    <h1 role="heading">My Portfolio</h1>
+
+    <!-- Image with ARIA role="img" and alt attribute -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr6oxlkyUtAhlGBRA4BjzY-IES4NhUfi_IKA&usqp=CAU" alt="Your Name's Image" role="img">
+
+    <!-- Brief Description with ARIA role="region" -->
+    <div role="region" aria-label="About Me">
+        <p>
+            This is a brief description of me and my work. You can use this space to introduce yourself.
+        </p>
+    </div>
+
+    <!-- List with ARIA role="list" and list items with ARIA role="listitem" -->
+    <div role="region" aria-label="My Projects">
+        <h2>Projects</h2>
+        <ul role="list">
+            <li role="listitem">Project 1: Description of Project 1</li>
+            <li role="listitem">Project 2: Description of Project 2</li>
+            <li role="listitem">Project 3: Description of Project 3</li>
+            <!-- Add more projects as needed -->
+        </ul>
+    </div>
 </body>
-
 </html>
